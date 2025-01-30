@@ -1,11 +1,30 @@
-import { ClerkProvider } from "@clerk/nextjs";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
 import "./globals.css";
+
+export const metadata = {
+  title: "Grammar Checker",
+};
 
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body>{children}</body>
+        <body>
+          <header>
+            <SignedIn>
+              <div className="w-full flex justify-end p-4">
+                <UserButton />
+              </div>
+            </SignedIn>
+          </header>
+          <main>{children}</main>
+        </body>
       </html>
     </ClerkProvider>
   );
