@@ -1,10 +1,4 @@
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
+import { ClerkProvider, SignedIn, UserButton } from "@clerk/nextjs";
 import "./globals.css";
 
 export const metadata = {
@@ -14,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      <html lang="en" className="min-w-[320px]">
         <body>
           <header>
             <SignedIn>

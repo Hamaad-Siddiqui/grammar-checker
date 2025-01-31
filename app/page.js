@@ -45,7 +45,7 @@ export default function Home() {
     });
 
   return (
-    <div className="flex flex-col justify-center mt-10 w-full max-w-xl mx-auto">
+    <div className="flex flex-col justify-center mt-10 w-full max-w-xl mx-auto px-5">
       <h1 className="text-2xl mb-2 font-semibold">Grammar Checker</h1>
       <p className="mb-5 text-gray-500">
         Enter your text in the field so our AI can check it for grammatical
