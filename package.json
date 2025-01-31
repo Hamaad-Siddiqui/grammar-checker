@@ -12,6 +12,7 @@
     "@clerk/nextjs": "^6.10.4",
     "@tailwindcss/postcss": "^4.0.1",
     "next": "15.1.6",
+    "openai": "^4.81.0",
     "postcss": "^8.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
